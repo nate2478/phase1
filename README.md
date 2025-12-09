@@ -39,4 +39,3 @@ npm run dev
 현재 기본 구조가 완성되었으며, 세부 기능들은 단계적으로 추가 예정입니다.
 
 자세한 내용은 [PROJECT_STRUCTURE.md](./PROJECT_STRUCTURE.md) 참고
-
