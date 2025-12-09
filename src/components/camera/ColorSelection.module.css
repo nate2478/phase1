@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.label {
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.colorGrid {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.colorChip {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: transform 0.2s, border-color 0.2s;
+  position: relative;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.colorChip:hover {
+  transform: scale(1.1);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.colorChip.selected {
+  border-color: #ffffff;
+  transform: scale(1.15);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.5);
+}
+
+.checkmark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.loading {
+  text-align: center;
+  color: #ffffff;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .colorChip {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .checkmark {
+    font-size: 20px;
+  }
+  
+  .colorGrid {
+    gap: 12px;
+  }
+}
+

@@ -1,0 +1,125 @@
+.listView {
+  margin-bottom: 24px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #333333;
+  padding: 0 16px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.container.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 16px;
+  padding: 0 16px;
+}
+
+.container.list {
+  padding: 0 16px;
+}
+
+.item {
+  display: flex;
+  gap: 12px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container.grid .item {
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.container.grid .image {
+  width: 100%;
+  height: 150px;
+}
+
+.content {
+  flex: 1;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container.grid .content {
+  padding: 8px;
+}
+
+.itemTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: #333333;
+}
+
+.container.grid .itemTitle {
+  font-size: 14px;
+}
+
+.itemDescription {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.4;
+}
+
+.container.grid .itemDescription {
+  font-size: 12px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 16px;
+    padding: 0 12px;
+  }
+  
+  .container.grid {
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 12px;
+    padding: 0 12px;
+  }
+  
+  .container.list {
+    padding: 0 12px;
+  }
+  
+  .image {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .container.grid .image {
+    height: 120px;
+  }
+}
+

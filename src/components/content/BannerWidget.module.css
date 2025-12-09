@@ -1,0 +1,51 @@
+.banner {
+  position: relative;
+  width: 100%;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  padding: 20px 16px 16px;
+  color: #ffffff;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.description {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .overlay {
+    padding: 16px 12px 12px;
+  }
+  
+  .title {
+    font-size: 16px;
+  }
+  
+  .description {
+    font-size: 12px;
+  }
+}
+

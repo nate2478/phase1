@@ -1,0 +1,80 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 24px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 24px;
+  color: #333333;
+}
+
+.buttonGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+}
+
+.loginButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 14px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+  transition: opacity 0.2s, transform 0.1s;
+  width: 100%;
+}
+
+.loginButton:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.loginButton:active {
+  transform: translateY(0);
+}
+
+.loginButton .icon {
+  font-size: 20px;
+}
+
+.loginButton .label {
+  color: #ffffff;
+}
+
+.loginButton[style*="background-color: #FEE500"] .label {
+  color: #000000;
+}
+
+.loginButton[style*="background-color: #000000"] .label {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 24px 16px;
+  }
+  
+  .title {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .loginButton {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+

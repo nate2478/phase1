@@ -1,0 +1,45 @@
+.subMenu {
+  display: flex;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.subMenu::-webkit-scrollbar {
+  display: none;
+}
+
+.menuItem {
+  flex: 1;
+  min-width: 80px;
+  padding: 14px 16px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  font-size: 15px;
+  font-weight: 500;
+  color: #666666;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+  white-space: nowrap;
+}
+
+.menuItem:hover {
+  color: #333333;
+}
+
+.menuItem.active {
+  color: #007bff;
+  border-bottom-color: #007bff;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .menuItem {
+    padding: 12px 14px;
+    font-size: 14px;
+    min-width: 70px;
+  }
+}
+
